@@ -14,7 +14,7 @@ The steps below are built with OS X in mind
 
 > `npm install -g npm3`
   
-## Initialize NPM and git - terminal
+## Initialize NPM and git
 > `mkdir rehacked-spa-basics`  
 
 > `cd rehacked-spa-basics`
@@ -56,7 +56,7 @@ The steps below are built with OS X in mind
 
 > Copy contents of pre-defined [local environment config](https://gist.github.com/johnrhampton/76f663969a11e89865b33113ed4eda6e)
 
-## Add app.js and start app
+## Add baseline components and start app
 
 > `cd .. && mkdir src && cd $_ && touch app.js && touch index.html` 
 
