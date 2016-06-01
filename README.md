@@ -56,7 +56,7 @@ The steps below are built with OS X in mind
 
 > Copy contents of pre-defined [local environment config](https://gist.github.com/johnrhampton/76f663969a11e89865b33113ed4eda6e)
 
-## Add app.js and start app - IDE
+## Add app.js and start app
 
 > `cd .. && mkdir src && cd $_ && touch app.js && touch index.html` 
 
@@ -66,4 +66,4 @@ The steps below are built with OS X in mind
 
 > Create `StartScreen/index.js` and `Dashboard/index.js` - add basic Component that returns div
 
-> webpack-dev-server --config webpack.config.js --content-base build/ --inline --hot
+> `webpack-dev-server --config webpack.config.js --content-base build/ --inline --hot`
