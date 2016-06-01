@@ -81,6 +81,8 @@ The steps below are built with OS X in mind
 > Add constructor, state, and other required functions to StartScreen component.  Pass required attributes to <Login />
 >> Ensure to wire up _componentHandler.upgradeDom();_ in appropriate lifecycle events (didMount, didUpdate)
 
+> We are focusing on Login, and will circle back to Register if we have time - demo Postman
+
 ## Add SCSS
 
 > Create `main.scss` - `mkdir -p src/assets/styles && cd $_ && touch main.scss`
@@ -94,3 +96,13 @@ The steps below are built with OS X in mind
 > Add [React Dev Tools Chrome Extension](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi) 
 
 > Under React tab - find StartScreen component and demonstrate setting state _loading = true_
+
+## Simple Validation
+
+> Add showSnackbar function
+
+> Add email/password check in _handleLogin_ 
+
+## Add User Service
+
+> 
