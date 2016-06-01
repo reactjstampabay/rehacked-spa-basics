@@ -67,3 +67,30 @@ The steps below are built with OS X in mind
 > Create `StartScreen/index.js` and `Dashboard/index.js` - add basic Component that returns div
 
 > `webpack-dev-server --config webpack.config.js --content-base build/ --inline --hot`
+
+## Add Login component
+
+> Create `Login/index.js` and `Loading/index.js`
+
+> Copy contents of pre-defined [Login Component](https://gist.github.com/johnrhampton/1df0ad69a2b3aacc6a42626cfe553bf7)
+
+> Copy contents of pre-defined [Loading Component](https://gist.github.com/johnrhampton/7259212dec666bf656bc8c457ebf3199)
+
+> Import Login component StartScreen and replace _hello from react_ div
+
+> Add constructor, state, and other required functions to StartScreen component.  Pass required attributes to <Login />
+>> Ensure to wire up _componentHandler.upgradeDom();_ in appropriate lifecycle events (didMount, didUpdate)
+
+## Add SCSS
+
+> Create `main.scss` - `mkdir -p src/assets/styles && cd $_ && touch main.scss`
+
+> Uncomment Stylesheets require in `app.js`
+
+> Copy contents of pre-defined [main.scss](https://gist.github.com/johnrhampton/336ad7b3d903ac063e94e3d7a9f4accb)
+
+## Dev Tools
+
+> Add [React Dev Tools Chrome Extension](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi) 
+
+> Under React tab - find StartScreen component and demonstrate setting state _loading = true_
