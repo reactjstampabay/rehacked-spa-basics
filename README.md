@@ -29,7 +29,7 @@ The steps below are built with OS X in mind
 > `npm3 install -g webpack webpack-dev-server`
 
 #### add project dependencies
-> `npm3 install react react-dom react-router material-design-lite babel-polyfill babel-preset-es2015 babel-preset-react --save`
+> `npm3 install react react-dom react-router material-design-lite classnames babel-polyfill babel-preset-es2015 babel-preset-react --save`
 
 #### add dev dependencies
 >  `npm3 install babel-core babel-loader css-loader extract-text-webpack-plugin file-loader node-sass null-loader open-browser-webpack-plugin sass-loader source-map-loader static-loader style-loader webpack webpack-dev-server --save-dev`
