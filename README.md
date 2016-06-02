@@ -1,8 +1,7 @@
-![ReactJS Tampa Bay Logo](http://photos1.meetupstatic.com/photos/event/c/7/6/6/global_449391046.jpeg)
-
-### [ReactJS Tampa Bay](http://www.meetup.com/ReactJS-Tampa-Bay/)
+![ReactJS Tampa Bay Logo](https://avatars2.githubusercontent.com/u/18738421?v=3&s=200)
 
 # ReHacked (June 8, 2016): React SPA Basics
+### By [ReactJS Tampa Bay](http://www.meetup.com/ReactJS-Tampa-Bay/)
 
 Welcome to ReHacked! By the end of this lab, you will have:
 
@@ -21,6 +20,8 @@ Welcome to ReHacked! By the end of this lab, you will have:
 
 ## Setup Instructions
 
+1. Signup for a [GitHub](https://github.com) account
+
 1. Install [git](https://git-scm.com/downloads)
 
 1. Install [Node Version Manager](https://github.com/creationix/nvm) ([Windows NVM](https://github.com/coreybutler/nvm-windows))
@@ -37,71 +38,81 @@ Welcome to ReHacked! By the end of this lab, you will have:
   
 ## Initialize NPM and git
 
-1. `mkdir rehacked-spa-basics && $_`  
+1. Go to a directory of your choice and create a `rehacked-spa-basics` folder
+  - Bash: `mkdir rehacked-spa-basics && $_`
 
-1. `echo "# rehacked-spa-basics" >> README.md`
+1. Create a `README.md` file 
+  - Bash: `echo "# rehacked-spa-basics" >> README.md`
 
-1. `printf "# node\nnode_modules\n\n# IDE\n.idea\n\n# webpack\nbuild" >> .gitignore`
+1. Create a `.gitignore` file 
+  - Bash: `printf "# node\nnode_modules\n\n# IDE\n.idea\n\n# webpack\nbuild" >> .gitignore`
 
-1. `npm init`
+1. Execute `npm init`
 
 #### add global dependencies
 
-1. `npm3 install -g webpack webpack-dev-server`
+1. Execute `npm3 install -g webpack webpack-dev-server`
 
 #### add project dependencies
 
-1. `npm3 install react react-dom react-router isomorphic-fetch material-design-lite classnames babel-polyfill babel-preset-es2015 babel-preset-react --save`
+1. Execute `npm3 install react react-dom react-router isomorphic-fetch material-design-lite classnames babel-polyfill babel-preset-es2015 babel-preset-react --save`
 
 #### add dev dependencies
 
-1.  `npm3 install babel-core babel-loader css-loader extract-text-webpack-plugin file-loader node-sass null-loader open-browser-webpack-plugin sass-loader source-map-loader static-loader style-loader webpack webpack-dev-server --save-dev`
+1. Execute  `npm3 install babel-core babel-loader css-loader extract-text-webpack-plugin file-loader node-sass null-loader open-browser-webpack-plugin sass-loader source-map-loader static-loader style-loader webpack webpack-dev-server --save-dev`
 
 #### create repo and push up changes
 
-1. `git init`
+1. Execute `git init`
 
-1. `git add .`
+1. Execute `git add .`
 
-1. `git commit -m "initial commit"`
+1. Execute `git commit -m "initial commit"`
 
-1. Create new repo on GitHub
+1. Create a new repo on GitHub
 
-1. `git remote add origin https://github.com/reactjstampabay/rehacked-spa-basics.git`
+1. Execute `git remote add origin [https link to your Git repo]`
 
-1. `git push -u origin master`
+1. Execute `git push -u origin master`
 
 ## Add Webpack and Environment config
 
-1. `touch webpack.config.js`
+1. Create a `webpack.config.js` file 
+  - Bash: `touch webpack.config.js`
 
 1. Copy contents of pre-defined [webpack config](https://gist.github.com/johnrhampton/82b5d0cebfb4b02645c7a9c1698330d8)
 
-1. `mkdir config && cd $_ && touch local.js && cd -`
+1. Create a `config` directory and a `local.js` file in it 
+  - Bash: `mkdir config && cd $_ && touch local.js && cd -`
 
-1. Copy contents of pre-defined [local environment config](https://gist.github.com/johnrhampton/76f663969a11e89865b33113ed4eda6e)
+1. Copy contents of pre-defined [local environment config](https://gist.github.com/johnrhampton/76f663969a11e89865b33113ed4eda6e) to `local.js`
 
 ## Add baseline components and start app
 
-1. `cd .. && mkdir src && cd $_ && touch app.js && touch index.html` 
+1. Create an `index.html` and `app.js` for your SPA 
+  - Bash: `cd .. && mkdir src && cd $_ && touch app.js && touch index.html` 
 
-1. Copy contents of pre-defined [index.html](https://gist.github.com/johnrhampton/9b15891913dcd04ca15c033311c712a4)
+1. Copy contents of pre-defined [index.html](https://gist.github.com/johnrhampton/9b15891913dcd04ca15c033311c712a4) to `index.html`
 
-1. Copy contents of pre-defined [app.js](https://gist.github.com/johnrhampton/cc0e6a04cd08535b640ae99a20913e4f)
+1. Copy contents of pre-defined [app.js](https://gist.github.com/johnrhampton/cc0e6a04cd08535b640ae99a20913e4f) to `app.js`
 
-1. Create `StartScreen/index.js` - `mkdir -p src/components/StartScreen && cd $_ && touch index.js && cd -`
+1. Create `StartScreen/index.js` 
+  - Bash: `mkdir -p src/components/StartScreen && cd $_ && touch index.js && cd -`
 
-1. Create `Dashboard/index.js` - `mkdir -p src/components/Dashboard && cd $_ && touch index.js && cd -`
+1. Create `Dashboard/index.js` 
+  - Bash: `mkdir -p src/components/Dashboard && cd $_ && touch index.js && cd -`
 
 1. Add basic class with render function that returns _hello from react_ div
 
-1. Start app - `webpack-dev-server --config webpack.config.js --content-base build/ --inline --hot`
+1. Start app by executing `webpack-dev-server --config webpack.config.js --content-base build/ --inline --hot`
 
 ## Add Login component with loading
 
-1. Create `Login/index.js` - `mkdir -p src/components/Login && cd $_ && touch index.js && cd -`
+1. Create `Login/index.js` 
+  - Bash: `mkdir -p src/components/Login && cd $_ && touch index.js && cd -`
 
-1. Create `Loading/index.js` - `mkdir -p src/components/Loading && cd $_ && touch index.js && cd -`
+1. Create `Loading/index.js` 
+  - Bash: `mkdir -p src/components/Loading && cd $_ && touch index.js && cd -`
 
 1. Copy contents of pre-defined [Login Component](https://gist.github.com/johnrhampton/1df0ad69a2b3aacc6a42626cfe553bf7)
 
@@ -116,7 +127,8 @@ Welcome to ReHacked! By the end of this lab, you will have:
 
 ## Add SCSS
 
-1. Create `main.scss` - `mkdir -p src/assets/styles && cd $_ && touch main.scss && cd -`
+1. Create `main.scss` 
+  - Bash: `mkdir -p src/assets/styles && cd $_ && touch main.scss && cd -`
 
 1. Uncomment Stylesheets require in `app.js`
 
@@ -136,13 +148,16 @@ Welcome to ReHacked! By the end of this lab, you will have:
 
 ## Add User Service and Common Environment Config
 
-1. Create `user.js` - `mkdir -p src/common/services && cd $_ && touch user.js && cd -`
+1. Create `user.js` 
+  - Bash: `mkdir -p src/common/services && cd $_ && touch user.js && cd -`
 
-1. Create `environment.js` - `mkdir -p src/common/constants && cd $_ && touch environment.js && cd -`
+1. Create `environment.js` 
+  - Bash: `mkdir -p src/common/constants && cd $_ && touch environment.js && cd -`
 
 1. Export API_PATH from `local.js` - `export const ENVIRONMENT = { API_PATH: '' };`
 
-1. Create `endpoints.js` - `mkdir -p src/common/constants && cd $_ && touch endpoints.js && cd -`
+1. Create `endpoints.js` 
+  - Bash: `mkdir -p src/common/constants && cd $_ && touch endpoints.js && cd -`
 
 1. Export USER const - `export const USER = { LOGIN: '/user/login' };`
 
