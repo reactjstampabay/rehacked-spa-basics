@@ -116,3 +116,5 @@ The steps below are built with OS X in mind
 > Export API_PATH from `local.js` - `export const ENVIRONMENT = { API_PATH: '' };`
 
 > Import API_PATH in `user.js`
+
+> Add `login` function to `user.js`
