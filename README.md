@@ -115,6 +115,14 @@ The steps below are built with OS X in mind
 
 > Export API_PATH from `local.js` - `export const ENVIRONMENT = { API_PATH: '' };`
 
-> Import API_PATH in `user.js`
+> Create `endpoints.js` - `mkdir -p src/common/constants && cd $_ && touch endpoints.js && cd -`
+
+> Export USER const - `export const USER = { LOGIN: '/user/login' };`
+
+> Import API_PATH and USER in `user.js`
 
 > Add `login` function to `user.js`
+
+#### todo: finish login function and add gist for user service, finish wiring up login in StartScreen, add StartScren gist
+
+#### todo: create gist for Dashboard (MDL template?)
