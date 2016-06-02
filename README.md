@@ -1,19 +1,39 @@
-# rehacked-spa-basics
-The codebase for the first ReHacked lab -- React SPA basics
+![ReactJS Tampa Bay Logo](http://photos1.meetupstatic.com/photos/event/c/7/6/6/global_449391046.jpeg)
 
-The steps below are built with OS X in mind
+### [ReactJS Tampa Bay](http://www.meetup.com/ReactJS-Tampa-Bay/)
 
-## Prerequisites
+# ReHacked (June 8, 2016): React SPA Basics
 
-1. [git](https://git-scm.com/downloads)
+Welcome to ReHacked! By the end of this lab, you will have:
 
-1. [Node Version Manager](https://github.com/creationix/nvm) ([Windows NVM](https://github.com/coreybutler/nvm-windows))
+* Created a "ground up" React SPA using Webpack and Babel (for JSX and ES2015 support)
+* Implemented some React components
+* Implemented a simple routing system
+* Implemented a service to talk to a Web API for simple authentication
 
-1. Node 4.4.5 (using `nvm install 4.4.5`)
+# PreHacked
 
-1. `nvm alias default 4.4.5`
+## Suggested Tools
 
-1. `npm install -g npm3`
+1. [Atom](https://atom.io/) or [WebStorm](https://www.jetbrains.com/webstorm/)
+
+1. [SourceTree](https://www.sourcetreeapp.com/) (If not using WebStorm)
+
+## Setup Instructions
+
+1. Install [git](https://git-scm.com/downloads)
+
+1. Install [Node Version Manager](https://github.com/creationix/nvm) ([Windows NVM](https://github.com/coreybutler/nvm-windows))
+
+1. Install Node 4.4.5 (using `nvm install 4.4.5`)
+
+1. Execute `nvm alias default 4.4.5`
+
+1. Execute `npm install -g npm3`
+
+1. Signup for a [Firebase](https://firebase.com) account
+
+# ReHacked
   
 ## Initialize NPM and git
 
