@@ -4,124 +4,131 @@ The codebase for the first ReHacked lab -- React SPA basics
 The steps below are built with OS X in mind
 
 ## Prerequisites
-> [git](https://git-scm.com/downloads)
 
-> [Node Version Manager](https://github.com/creationix/nvm) ([Windows NVM](https://github.com/coreybutler/nvm-windows))
+1. [git](https://git-scm.com/downloads)
 
-> Node 4.4.5 (using `nvm install 4.4.5`)
+1. [Node Version Manager](https://github.com/creationix/nvm) ([Windows NVM](https://github.com/coreybutler/nvm-windows))
 
-> `nvm alias default 4.4.5`
+1. Node 4.4.5 (using `nvm install 4.4.5`)
 
-> `npm install -g npm3`
+1. `nvm alias default 4.4.5`
+
+1. `npm install -g npm3`
   
 ## Initialize NPM and git
-> `mkdir rehacked-spa-basics && $_`  
 
-> `echo "# rehacked-spa-basics" >> README.md`
+1. `mkdir rehacked-spa-basics && $_`  
 
-> `printf "# node\nnode_modules\n\n# IDE\n.idea\n\n# webpack\nbuild" >> .gitignore`
+1. `echo "# rehacked-spa-basics" >> README.md`
 
-> `npm init`
+1. `printf "# node\nnode_modules\n\n# IDE\n.idea\n\n# webpack\nbuild" >> .gitignore`
+
+1. `npm init`
 
 #### add global dependencies
-> `npm3 install -g webpack webpack-dev-server`
+
+1. `npm3 install -g webpack webpack-dev-server`
 
 #### add project dependencies
-> `npm3 install react react-dom react-router isomorphic-fetch material-design-lite classnames babel-polyfill babel-preset-es2015 babel-preset-react --save`
+
+1. `npm3 install react react-dom react-router isomorphic-fetch material-design-lite classnames babel-polyfill babel-preset-es2015 babel-preset-react --save`
 
 #### add dev dependencies
->  `npm3 install babel-core babel-loader css-loader extract-text-webpack-plugin file-loader node-sass null-loader open-browser-webpack-plugin sass-loader source-map-loader static-loader style-loader webpack webpack-dev-server --save-dev`
+
+1.  `npm3 install babel-core babel-loader css-loader extract-text-webpack-plugin file-loader node-sass null-loader open-browser-webpack-plugin sass-loader source-map-loader static-loader style-loader webpack webpack-dev-server --save-dev`
 
 #### create repo and push up changes
-> `git init`
 
-> `git add .`
+1. `git init`
 
-> `git commit -m "initial commit"`
+1. `git add .`
 
-> Create new repo on GitHub
+1. `git commit -m "initial commit"`
 
-> `git remote add origin https://github.com/reactjstampabay/rehacked-spa-basics.git`
+1. Create new repo on GitHub
 
-> `git push -u origin master`
+1. `git remote add origin https://github.com/reactjstampabay/rehacked-spa-basics.git`
+
+1. `git push -u origin master`
 
 ## Add Webpack and Environment config
-> `touch webpack.config.js`
 
-> Copy contents of pre-defined [webpack config](https://gist.github.com/johnrhampton/82b5d0cebfb4b02645c7a9c1698330d8)
+1. `touch webpack.config.js`
 
-> `mkdir config && cd $_ && touch local.js && cd -`
+1. Copy contents of pre-defined [webpack config](https://gist.github.com/johnrhampton/82b5d0cebfb4b02645c7a9c1698330d8)
 
-> Copy contents of pre-defined [local environment config](https://gist.github.com/johnrhampton/76f663969a11e89865b33113ed4eda6e)
+1. `mkdir config && cd $_ && touch local.js && cd -`
+
+1. Copy contents of pre-defined [local environment config](https://gist.github.com/johnrhampton/76f663969a11e89865b33113ed4eda6e)
 
 ## Add baseline components and start app
 
-> `cd .. && mkdir src && cd $_ && touch app.js && touch index.html` 
+1. `cd .. && mkdir src && cd $_ && touch app.js && touch index.html` 
 
-> Copy contents of pre-defined [index.html](https://gist.github.com/johnrhampton/9b15891913dcd04ca15c033311c712a4)
+1. Copy contents of pre-defined [index.html](https://gist.github.com/johnrhampton/9b15891913dcd04ca15c033311c712a4)
 
-> Copy contents of pre-defined [app.js](https://gist.github.com/johnrhampton/cc0e6a04cd08535b640ae99a20913e4f)
+1. Copy contents of pre-defined [app.js](https://gist.github.com/johnrhampton/cc0e6a04cd08535b640ae99a20913e4f)
 
-> Create `StartScreen/index.js` - `mkdir -p src/components/StartScreen && cd $_ && touch index.js && cd -`
+1. Create `StartScreen/index.js` - `mkdir -p src/components/StartScreen && cd $_ && touch index.js && cd -`
 
-> Create `Dashboard/index.js` - `mkdir -p src/components/Dashboard && cd $_ && touch index.js && cd -`
+1. Create `Dashboard/index.js` - `mkdir -p src/components/Dashboard && cd $_ && touch index.js && cd -`
 
-> Add basic class with render function that returns _hello from react_ div
+1. Add basic class with render function that returns _hello from react_ div
 
-> Start app - `webpack-dev-server --config webpack.config.js --content-base build/ --inline --hot`
+1. Start app - `webpack-dev-server --config webpack.config.js --content-base build/ --inline --hot`
 
 ## Add Login component with loading
 
-> Create `Login/index.js` - `mkdir -p src/components/Login && cd $_ && touch index.js && cd -`
+1. Create `Login/index.js` - `mkdir -p src/components/Login && cd $_ && touch index.js && cd -`
 
-> Create `Loading/index.js` - `mkdir -p src/components/Loading && cd $_ && touch index.js && cd -`
+1. Create `Loading/index.js` - `mkdir -p src/components/Loading && cd $_ && touch index.js && cd -`
 
-> Copy contents of pre-defined [Login Component](https://gist.github.com/johnrhampton/1df0ad69a2b3aacc6a42626cfe553bf7)
+1. Copy contents of pre-defined [Login Component](https://gist.github.com/johnrhampton/1df0ad69a2b3aacc6a42626cfe553bf7)
 
-> Copy contents of pre-defined [Loading Component](https://gist.github.com/johnrhampton/7259212dec666bf656bc8c457ebf3199)
+1. Copy contents of pre-defined [Loading Component](https://gist.github.com/johnrhampton/7259212dec666bf656bc8c457ebf3199)
 
-> Import Login component StartScreen and replace _hello from react_ div
+1. Import Login component StartScreen and replace _hello from react_ div
 
-> Add constructor, state, and other required functions to StartScreen component.  Pass required attributes to <Login />
->> Ensure to wire up _componentHandler.upgradeDom();_ in appropriate lifecycle events (didMount, didUpdate)
+1. Add constructor, state, and other required functions to StartScreen component.  Pass required attributes to <Login /1.
+1.1. Ensure to wire up _componentHandler.upgradeDom();_ in appropriate lifecycle events (didMount, didUpdate)
 
-> We are focusing on Login, and will circle back to Register if we have time - demo Postman
+1. We are focusing on Login, and will circle back to Register if we have time - demo Postman
 
 ## Add SCSS
 
-> Create `main.scss` - `mkdir -p src/assets/styles && cd $_ && touch main.scss && cd -`
+1. Create `main.scss` - `mkdir -p src/assets/styles && cd $_ && touch main.scss && cd -`
 
-> Uncomment Stylesheets require in `app.js`
+1. Uncomment Stylesheets require in `app.js`
 
-> Copy contents of pre-defined [main.scss](https://gist.github.com/johnrhampton/336ad7b3d903ac063e94e3d7a9f4accb)
+1. Copy contents of pre-defined [main.scss](https://gist.github.com/johnrhampton/336ad7b3d903ac063e94e3d7a9f4accb)
 
 ## Dev Tools
 
-> Add [React Dev Tools Chrome Extension](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi) 
+1. Add [React Dev Tools Chrome Extension](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi) 
 
-> Under React tab - find StartScreen component and demonstrate setting state _loading = true_
+1. Under React tab - find StartScreen component and demonstrate setting state _loading = true_
 
 ## Simple Validation
 
-> Add showSnackbar function
+1. Add showSnackbar function
 
-> Add email/password check in _handleLogin_ 
+1. Add email/password check in _handleLogin_ 
 
 ## Add User Service and Common Environment Config
 
-> Create `user.js` - `mkdir -p src/common/services && cd $_ && touch user.js && cd -`
+1. Create `user.js` - `mkdir -p src/common/services && cd $_ && touch user.js && cd -`
 
-> Create `environment.js` - `mkdir -p src/common/constants && cd $_ && touch environment.js && cd -`
+1. Create `environment.js` - `mkdir -p src/common/constants && cd $_ && touch environment.js && cd -`
 
-> Export API_PATH from `local.js` - `export const ENVIRONMENT = { API_PATH: '' };`
+1. Export API_PATH from `local.js` - `export const ENVIRONMENT = { API_PATH: '' };`
 
-> Create `endpoints.js` - `mkdir -p src/common/constants && cd $_ && touch endpoints.js && cd -`
+1. Create `endpoints.js` - `mkdir -p src/common/constants && cd $_ && touch endpoints.js && cd -`
 
-> Export USER const - `export const USER = { LOGIN: '/user/login' };`
+1. Export USER const - `export const USER = { LOGIN: '/user/login' };`
 
-> Import API_PATH and USER in `user.js`
+1. Import API_PATH and USER in `user.js`
 
-> Add `login` function to `user.js`
+1. Add `login` function to `user.js`
 
 #### todo: finish login function and add gist for user service, finish wiring up login in StartScreen, add StartScren gist
 
