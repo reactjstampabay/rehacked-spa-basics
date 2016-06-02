@@ -39,13 +39,13 @@ Welcome to ReHacked! By the end of this lab, you will have:
 ## Initialize NPM and git
 
 1. Go to a directory of your choice and create a `rehacked-spa-basics` folder
-  - Bash: `mkdir rehacked-spa-basics && $_`
+  - **bash:** `mkdir rehacked-spa-basics && $_`
 
 1. Create a `README.md` file 
-  - Bash: `echo "# rehacked-spa-basics" >> README.md`
+  - **bash:** `echo "# rehacked-spa-basics" >> README.md`
 
 1. Create a `.gitignore` file 
-  - Bash: `printf "# node\nnode_modules\n\n# IDE\n.idea\n\n# webpack\nbuild" >> .gitignore`
+  - **bash:** `printf "# node\nnode_modules\n\n# IDE\n.idea\n\n# webpack\nbuild" >> .gitignore`
 
 1. Execute `npm init`
 
@@ -78,29 +78,29 @@ Welcome to ReHacked! By the end of this lab, you will have:
 ## Add Webpack and Environment config
 
 1. Create a `webpack.config.js` file 
-  - Bash: `touch webpack.config.js`
+  - **bash:** `touch webpack.config.js`
 
 1. Copy contents of pre-defined [webpack config](https://gist.github.com/johnrhampton/82b5d0cebfb4b02645c7a9c1698330d8)
 
 1. Create a `config` directory and a `local.js` file in it 
-  - Bash: `mkdir config && cd $_ && touch local.js && cd -`
+  - **bash:** `mkdir config && cd $_ && touch local.js && cd -`
 
 1. Copy contents of pre-defined [local environment config](https://gist.github.com/johnrhampton/76f663969a11e89865b33113ed4eda6e) to `local.js`
 
 ## Add baseline components and start app
 
 1. Create an `index.html` and `app.js` for your SPA 
-  - Bash: `cd .. && mkdir src && cd $_ && touch app.js && touch index.html` 
+  - **bash:** `cd .. && mkdir src && cd $_ && touch app.js && touch index.html` 
 
 1. Copy contents of pre-defined [index.html](https://gist.github.com/johnrhampton/9b15891913dcd04ca15c033311c712a4) to `index.html`
 
 1. Copy contents of pre-defined [app.js](https://gist.github.com/johnrhampton/cc0e6a04cd08535b640ae99a20913e4f) to `app.js`
 
 1. Create `StartScreen/index.js` 
-  - Bash: `mkdir -p src/components/StartScreen && cd $_ && touch index.js && cd -`
+  - **bash:** `mkdir -p src/components/StartScreen && cd $_ && touch index.js && cd -`
 
 1. Create `Dashboard/index.js` 
-  - Bash: `mkdir -p src/components/Dashboard && cd $_ && touch index.js && cd -`
+  - **bash:** `mkdir -p src/components/Dashboard && cd $_ && touch index.js && cd -`
 
 1. Add basic class with render function that returns _hello from react_ div
 
@@ -109,10 +109,10 @@ Welcome to ReHacked! By the end of this lab, you will have:
 ## Add Login component with loading
 
 1. Create `Login/index.js` 
-  - Bash: `mkdir -p src/components/Login && cd $_ && touch index.js && cd -`
+  - **bash:** `mkdir -p src/components/Login && cd $_ && touch index.js && cd -`
 
 1. Create `Loading/index.js` 
-  - Bash: `mkdir -p src/components/Loading && cd $_ && touch index.js && cd -`
+  - **bash:** `mkdir -p src/components/Loading && cd $_ && touch index.js && cd -`
 
 1. Copy contents of pre-defined [Login Component](https://gist.github.com/johnrhampton/1df0ad69a2b3aacc6a42626cfe553bf7)
 
@@ -128,7 +128,7 @@ Welcome to ReHacked! By the end of this lab, you will have:
 ## Add SCSS
 
 1. Create `main.scss` 
-  - Bash: `mkdir -p src/assets/styles && cd $_ && touch main.scss && cd -`
+  - **bash:** `mkdir -p src/assets/styles && cd $_ && touch main.scss && cd -`
 
 1. Uncomment Stylesheets require in `app.js`
 
@@ -149,15 +149,15 @@ Welcome to ReHacked! By the end of this lab, you will have:
 ## Add User Service and Common Environment Config
 
 1. Create `user.js` 
-  - Bash: `mkdir -p src/common/services && cd $_ && touch user.js && cd -`
+  - **bash:** `mkdir -p src/common/services && cd $_ && touch user.js && cd -`
 
 1. Create `environment.js` 
-  - Bash: `mkdir -p src/common/constants && cd $_ && touch environment.js && cd -`
+  - **bash:** `mkdir -p src/common/constants && cd $_ && touch environment.js && cd -`
 
 1. Export API_PATH from `local.js` - `export const ENVIRONMENT = { API_PATH: '' };`
 
 1. Create `endpoints.js` 
-  - Bash: `mkdir -p src/common/constants && cd $_ && touch endpoints.js && cd -`
+  - **bash:** `mkdir -p src/common/constants && cd $_ && touch endpoints.js && cd -`
 
 1. Export USER const - `export const USER = { LOGIN: '/user/login' };`
 
