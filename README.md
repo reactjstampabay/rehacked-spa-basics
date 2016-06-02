@@ -15,9 +15,7 @@ The steps below are built with OS X in mind
 > `npm install -g npm3`
   
 ## Initialize NPM and git
-> `mkdir rehacked-spa-basics`  
-
-> `cd rehacked-spa-basics`
+> `mkdir rehacked-spa-basics && $_`  
 
 > `echo "# rehacked-spa-basics" >> README.md`
 
@@ -29,7 +27,7 @@ The steps below are built with OS X in mind
 > `npm3 install -g webpack webpack-dev-server`
 
 #### add project dependencies
-> `npm3 install react react-dom react-router material-design-lite classnames babel-polyfill babel-preset-es2015 babel-preset-react --save`
+> `npm3 install react react-dom react-router isomorphic-fetch material-design-lite classnames babel-polyfill babel-preset-es2015 babel-preset-react --save`
 
 #### add dev dependencies
 >  `npm3 install babel-core babel-loader css-loader extract-text-webpack-plugin file-loader node-sass null-loader open-browser-webpack-plugin sass-loader source-map-loader static-loader style-loader webpack webpack-dev-server --save-dev`
@@ -52,7 +50,7 @@ The steps below are built with OS X in mind
 
 > Copy contents of pre-defined [webpack config](https://gist.github.com/johnrhampton/82b5d0cebfb4b02645c7a9c1698330d8)
 
-> `mkdir config && cd $_ && touch local.js`
+> `mkdir config && cd $_ && touch local.js && cd -`
 
 > Copy contents of pre-defined [local environment config](https://gist.github.com/johnrhampton/76f663969a11e89865b33113ed4eda6e)
 
@@ -64,13 +62,19 @@ The steps below are built with OS X in mind
 
 > Copy contents of pre-defined [app.js](https://gist.github.com/johnrhampton/cc0e6a04cd08535b640ae99a20913e4f)
 
-> Create `StartScreen/index.js` and `Dashboard/index.js` - add basic Component that returns div
+> Create `StartScreen/index.js` - `mkdir -p src/components/StartScreen && cd $_ && touch index.js && cd -`
 
-> `webpack-dev-server --config webpack.config.js --content-base build/ --inline --hot`
+> Create `Dashboard/index.js` - `mkdir -p src/components/Dashboard && cd $_ && touch index.js && cd -`
 
-## Add Login component
+> Add basic class with render function that returns _hello from react_ div
 
-> Create `Login/index.js` and `Loading/index.js`
+> Start app - `webpack-dev-server --config webpack.config.js --content-base build/ --inline --hot`
+
+## Add Login component with loading
+
+> Create `Login/index.js` - `mkdir -p src/components/Login && cd $_ && touch index.js && cd -`
+
+> Create `Loading/index.js` - `mkdir -p src/components/Loading && cd $_ && touch index.js && cd -`
 
 > Copy contents of pre-defined [Login Component](https://gist.github.com/johnrhampton/1df0ad69a2b3aacc6a42626cfe553bf7)
 
@@ -85,7 +89,7 @@ The steps below are built with OS X in mind
 
 ## Add SCSS
 
-> Create `main.scss` - `mkdir -p src/assets/styles && cd $_ && touch main.scss`
+> Create `main.scss` - `mkdir -p src/assets/styles && cd $_ && touch main.scss && cd -`
 
 > Uncomment Stylesheets require in `app.js`
 
@@ -103,6 +107,12 @@ The steps below are built with OS X in mind
 
 > Add email/password check in _handleLogin_ 
 
-## Add User Service
+## Add User Service and Common Environment Config
 
-> 
+> Create `user.js` - `mkdir -p src/common/services && cd $_ && touch user.js && cd -`
+
+> Create `environment.js` - `mkdir -p src/common/constants && cd $_ && touch environment.js && cd -`
+
+> Export API_PATH from `local.js` - `export const ENVIRONMENT = { API_PATH: '' };`
+
+> Import API_PATH in `user.js`
