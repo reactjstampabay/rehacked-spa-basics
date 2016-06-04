@@ -9,6 +9,7 @@ Welcome to ReHacked! By the end of this lab, you will have:
 * Implemented some React components
 * Implemented a simple routing system
 * Implemented a service to talk to a Web API for simple authentication
+* Deployed the React SPA to Firebase
 
 # PreHacked
 
