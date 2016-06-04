@@ -191,3 +191,7 @@ Welcome to ReHacked! By the end of this lab, you will have:
 ## Give Dashboard some style
 
 #### todo: create gist for Dashboard (MDL template?)
+
+## Deploy to Firebase
+
+### todo
