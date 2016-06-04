@@ -191,7 +191,11 @@ Welcome to ReHacked! By the end of this lab, you will have:
 
 ## Give Dashboard some style
 
-#### todo: create gist for Dashboard (MDL template?)
+1. Create `assets/style/dashboard.scss`
+
+1. Copy contents of pre-defined [dashboard.scss](https://gist.github.com/johnrhampton/d1fadde1292bac10c28f4920d48dce72)
+
+1. Copy contents of pre-defined [`Dashboard/index.js`]()
 
 ## Deploy to Firebase
 
