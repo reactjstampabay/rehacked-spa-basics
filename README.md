@@ -98,11 +98,13 @@ Welcome to ReHacked! By the end of this lab, you will have:
 
 1. Create `StartScreen/index.js` 
   - **bash:** `mkdir -p src/components/StartScreen && cd $_ && touch index.js && cd -`
+  
+1. Add basic class with render function that returns _hello from react_ div
 
 1. Create `Dashboard/index.js` 
   - **bash:** `mkdir -p src/components/Dashboard && cd $_ && touch index.js && cd -`
 
-1. Add basic class with render function that returns _hello from react_ div
+1. Add basic class with render function that returns _My Dashboard_ div
 
 1. Start app by executing `webpack-dev-server --config webpack.config.js --content-base build/ --inline --hot`
 
@@ -142,7 +144,8 @@ Welcome to ReHacked! By the end of this lab, you will have:
 
 ## Simple Validation
 
-1. Add showSnackbar function
+1. Add `_showSnackBar` function
+  - pre-defined [StartScreen/index.js](https://gist.github.com/johnrhampton/e6dea5e41cf0a64f10d8b728e6beea55)
 
 1. Add email/password check in _handleLogin_ 
 
@@ -161,10 +164,30 @@ Welcome to ReHacked! By the end of this lab, you will have:
 
 1. Export USER const - `export const USER = { LOGIN: '/user/login' };`
 
-1. Import API_PATH and USER in `user.js`
+## Build User Login
 
-1. Add `login` function to `user.js`
+1. Import 'isomorphic-fetch', {ENVIRONMENT} and {USER} in `user.js`
 
-#### todo: finish login function and add gist for user service, finish wiring up login in StartScreen, add StartScren gist
+1. Export `login` function in [`user.js`](https://gist.github.com/johnrhampton/2eaa69eed860d5f4220a3fafb5b62e36) 
+
+1. Import `* as UserService` in `StartScreen/index.js`
+
+1. Invoke `UserService.login` on validation `_handleLogin`
+
+1. Set app state to display loading during login process
+
+1. Add stringify'd `USER_PROFILE` to localStorage on success, invoke `_showSnackBar` on login error (incorrect email or pw)
+
+1. Log parsed `USER_PROFILE` to console to demonstrate API response payload
+
+## Navigate to Dashboard
+
+1. Import {hashHistory} from `react-router`
+
+1. Add push to `/dashboard` on login success
+
+1. Navigate back to Login and Forward to Dashboard - delete localStorage['USER_PROFILE'] - can no longer nav forward
+
+## Give Dashboard some style
 
 #### todo: create gist for Dashboard (MDL template?)
