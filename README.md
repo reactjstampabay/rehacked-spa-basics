@@ -217,9 +217,9 @@ Welcome to ReHacked! By the end of this lab, you will have:
 1. `firebase login` - a browser will open to authenticate with Google
 
 1. `firebase init` - select **Hosting**, hit spacebar next to **Database** to de-select
-1.1. Type `build` for your public directory
-1.1. Type `Y` for SPA
-1.1. Select your newly created project on Firebase
+  - `build` for your public directory
+  - `Y` for SPA
+  - Select your newly created project on Firebase
 
 1. `firebase deploy`
 
