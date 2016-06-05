@@ -80,7 +80,7 @@ Welcome to ReHacked! By the end of this lab, you will have:
 
 1. Execute `git commit -m "initial commit"`
 
-1. Create a new repo on GitHub
+1. Create a new _empty_ repo on GitHub
 
 1. Execute `git remote add origin [https link to your Git repo]`
 
