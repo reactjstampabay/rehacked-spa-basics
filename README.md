@@ -107,26 +107,28 @@ Welcome to ReHacked! By the end of this lab, you will have:
 
 1. Copy contents of pre-defined [app.js](https://gist.github.com/johnrhampton/cc0e6a04cd08535b640ae99a20913e4f) to `app.js`
 
-1. Create `StartScreen/index.js` 
-  - **bash:** `mkdir -p src/components/StartScreen && cd $_ && touch index.js && cd -`
+1. Create a `components` subdirectory under the `src` folder.
+
+1. Create `StartScreen/index.js` under `components`
+  - **bash (from the root of the project):** `mkdir -p src/components/StartScreen && cd $_ && touch index.js && cd -`
   
 1. Add basic class with render function that returns _hello from react_ div
 
 1. Create `Dashboard/index.js` 
-  - **bash:** `mkdir -p src/components/Dashboard && cd $_ && touch index.js && cd -`
+  - **bash (from the root of the project):** `mkdir -p src/components/Dashboard && cd $_ && touch index.js && cd -`
 
 1. Add basic class with render function that returns _My Dashboard_ div
-1.1. Dashboard can be a simple function - `const Dashboard = () => { return (<div>My Dashboard</div) }; export default Dashboard;`
+1.1. Dashboard can be a simple function - `const Dashboard = () => { return (<div>My Dashboard</div>) }; export default Dashboard;`
 
-1. Start app by executing `webpack-dev-server --config webpack.config.js --content-base build/ --inline --hot`
+1. Start app by going to the root of your repo and executing `webpack-dev-server --config webpack.config.js --content-base build/ --inline --hot`
 
 ## Add Login component with loading
 
 1. Create `Login/index.js` 
-  - **bash:** `mkdir -p src/components/Login && cd $_ && touch index.js && cd -`
+  - **bash (from the root of the project):** `mkdir -p src/components/Login && cd $_ && touch index.js && cd -`
 
 1. Create `Loading/index.js` 
-  - **bash:** `mkdir -p src/components/Loading && cd $_ && touch index.js && cd -`
+  - **bash (from the root of the project):** `mkdir -p src/components/Loading && cd $_ && touch index.js && cd -`
 
 1. Copy contents of pre-defined [Login Component](https://gist.github.com/johnrhampton/1df0ad69a2b3aacc6a42626cfe553bf7)
 
@@ -134,7 +136,7 @@ Welcome to ReHacked! By the end of this lab, you will have:
 
 1. Import Login component StartScreen and replace _hello from react_ div
 
-1. Add constructor, state, and other required functions to StartScreen component.  Pass required attributes to <Login /1.
+1. Add constructor, state, and other required functions to StartScreen component.  Pass required attributes to <Login />
 1.1. Ensure to wire up _componentHandler.upgradeDom();_ in appropriate lifecycle events (didMount, didUpdate)
 
 1. We are focusing on Login, and will circle back to Register if we have time - demo Postman
@@ -142,7 +144,7 @@ Welcome to ReHacked! By the end of this lab, you will have:
 ## Add SCSS
 
 1. Create `main.scss` 
-  - **bash:** `mkdir -p src/assets/styles && cd $_ && touch main.scss && cd -`
+  - **bash (from the root of the project):** `mkdir -p src/assets/styles && cd $_ && touch main.scss && cd -`
 
 1. Uncomment Stylesheets require in `app.js`
 
@@ -164,15 +166,15 @@ Welcome to ReHacked! By the end of this lab, you will have:
 ## Add User Service and Common Environment Config
 
 1. Create `user.js` 
-  - **bash:** `mkdir -p src/common/services && cd $_ && touch user.js && cd -`
+  - **bash (from the root of the project):** `mkdir -p src/common/services && cd $_ && touch user.js && cd -`
 
 1. Create `environment.js` 
-  - **bash:** `mkdir -p src/common/constants && cd $_ && touch environment.js && cd -`
+  - **bash (from the root of the project):** `mkdir -p src/common/constants && cd $_ && touch environment.js && cd -`
 
 1. Export API_PATH from `local.js` - `export const ENVIRONMENT = { API_PATH: '' };`
 
 1. Create `endpoints.js` 
-  - **bash:** `mkdir -p src/common/constants && cd $_ && touch endpoints.js && cd -`
+  - **bash (from the root of the project):** `mkdir -p src/common/constants && cd $_ && touch endpoints.js && cd -`
 
 1. Export USER const - `export const USER = { LOGIN: '/user/login' };`
 
