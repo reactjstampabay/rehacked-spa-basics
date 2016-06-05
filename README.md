@@ -49,6 +49,15 @@ Welcome to ReHacked! By the end of this lab, you will have:
   - **bash:** `printf "# node\nnode_modules\n\n# IDE\n.idea\n\n# webpack\nbuild" >> .gitignore`
 
 1. Execute `npm init`
+  - **name**: rehacked-spa-basics
+  - **version**: 1.0.0
+  - **description**: A React SPA with basic functionality
+  - **entry point**: ./src/app.js
+  - **test command**: <Enter>
+  - **git repository**: <Enter>
+  - **keywords**: <Enter>
+  - **author**: [Enter your name]
+  - **license**: <Enter>
 
 #### add global dependencies
 
