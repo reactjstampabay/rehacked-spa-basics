@@ -202,4 +202,25 @@ Welcome to ReHacked! By the end of this lab, you will have:
 
 ## Deploy to Firebase
 
-### todo
+1. Build SPA bundle with Webpack - `webpack --config webpack.config.js`
+
+1. Open the [Firebase Console](https://console.firebase.google.com/?pli=1)
+
+1. Create a new Firebase project
+
+1. Click on `Hosting` in the left sidebar
+ 
+1. Install firebase-tools - `npm install -g firebase-tools`
+
+#### Login and Initialize Firebase from your project's directory
+
+1. `firebase login` - a browser will open to authenticate with Google
+
+1. `firebase init` - select **Hosting**, hit spacebar next to **Database** to de-select
+1.1. Type `build` for your public directory
+1.1. Type `Y` for SPA
+1.1. Select your newly created project on Firebase
+
+1. `firebase deploy`
+
+1. Open the deployed app and login
