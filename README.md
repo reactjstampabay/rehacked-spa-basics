@@ -137,6 +137,7 @@ Welcome to ReHacked! By the end of this lab, you will have:
 1. Import Login component StartScreen and replace _hello from react_ div
 
 1. Add constructor, state, and other required functions to StartScreen component.  Pass required attributes to <Login />
+1.1. TODO: Overview of what attributes are required
 1.1. Ensure to wire up _componentHandler.upgradeDom();_ in appropriate lifecycle events (didMount, didUpdate)
 
 1. We are focusing on Login, and will circle back to Register if we have time - demo Postman
