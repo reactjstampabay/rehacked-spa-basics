@@ -106,6 +106,7 @@ Welcome to ReHacked! By the end of this lab, you will have:
   - **bash:** `mkdir -p src/components/Dashboard && cd $_ && touch index.js && cd -`
 
 1. Add basic class with render function that returns _My Dashboard_ div
+1.1. Dashboard can be a simple function - `const Dashboard = () => { return (<div>My Dashboard</div) }; export default Dashboard;`
 
 1. Start app by executing `webpack-dev-server --config webpack.config.js --content-base build/ --inline --hot`
 
@@ -195,7 +196,9 @@ Welcome to ReHacked! By the end of this lab, you will have:
 
 1. Copy contents of pre-defined [dashboard.scss](https://gist.github.com/johnrhampton/d1fadde1292bac10c28f4920d48dce72)
 
-1. Copy contents of pre-defined [`Dashboard/index.js`]()
+1. @Import `./dashboard.scss` in `main.scss`
+
+1. Copy contents of pre-defined [`Dashboard/index.js`](https://gist.github.com/johnrhampton/5002d240cd5ae32bcbdfa6814a1090f2)
 
 ## Deploy to Firebase
 
