@@ -16,6 +16,7 @@ Welcome to ReHacked! By the end of this lab, you will have:
 ## Suggested Tools
 
 1. [Atom](https://atom.io/) or [WebStorm](https://www.jetbrains.com/webstorm/)
+  - [terminal-plus for Atom](https://atom.io/packages/terminal-plus)
 
 1. [SourceTree](https://www.sourcetreeapp.com/) (If not using WebStorm)
 
