@@ -118,7 +118,6 @@ Welcome to ReHacked! By the end of this lab, you will have:
   - **bash (from the root of the project):** `mkdir -p src/components/Dashboard && cd $_ && touch index.js && cd -`
 
 1. Add basic class with render function that returns _My Dashboard_ div
-1.1. Dashboard can be a simple function - `const Dashboard = () => { return (<div>My Dashboard</div>) }; export default Dashboard;`
 
 1. Start app by going to the root of your repo and executing `webpack-dev-server --config webpack.config.js --content-base build/ --inline --hot`
 
@@ -134,11 +133,11 @@ Welcome to ReHacked! By the end of this lab, you will have:
 
 1. Copy contents of pre-defined [Loading Component](https://gist.github.com/johnrhampton/7259212dec666bf656bc8c457ebf3199)
 
-1. Import Login component StartScreen and replace _hello from react_ div
+1. Import Login component in StartScreen and replace _hello from react_ div
 
 1. Add constructor, state, and other required functions to StartScreen component.  Pass required attributes to <Login />
-1.1. TODO: Overview of what attributes are required
-1.1. Ensure to wire up _componentHandler.upgradeDom();_ in appropriate lifecycle events (didMount, didUpdate)
+    1. TODO: Overview of what attributes are required
+    1. Ensure to wire up _componentHandler.upgradeDom();_ in appropriate lifecycle events (didMount, didUpdate)
 
 1. We are focusing on Login, and will circle back to Register if we have time - demo Postman
 
@@ -160,7 +159,7 @@ Welcome to ReHacked! By the end of this lab, you will have:
 ## Simple Validation
 
 1. Add `_showSnackBar` function
-  - pre-defined [StartScreen/index.js](https://gist.github.com/johnrhampton/e6dea5e41cf0a64f10d8b728e6beea55)
+  - Pre-defined [StartScreen/index.js](https://gist.github.com/johnrhampton/e6dea5e41cf0a64f10d8b728e6beea55)
 
 1. Add email/password check in _handleLogin_ 
 
