@@ -145,7 +145,7 @@ Welcome to ReHacked! By the end of this lab, you will have:
                    handleFieldChange={this._handleFieldChange}  
                    handleLogin={this._handleLogin}/>
           ```
-        1. Ensure to wire up _componentHandler.upgradeDom();_ in appropriate lifecycle events (didMount, didUpdate)
+    1. Ensure to wire up _componentHandler.upgradeDom();_ in appropriate lifecycle events (didMount, didUpdate)
 
 1. We are focusing on Login, and will circle back to Register if we have time (Postman demo)
 
