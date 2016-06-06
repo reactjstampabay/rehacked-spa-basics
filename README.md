@@ -11,7 +11,7 @@ Welcome to ReHacked! By the end of this lab, you will have:
 * Implemented a service to talk to a Web API for simple authentication
 * Deployed the React SPA to Firebase
 
-# PreHacked
+# [PreHacked](#prehacked)
 
 ## Suggested Tools
 
