@@ -135,9 +135,17 @@ Welcome to ReHacked! By the end of this lab, you will have:
 
 1. Import Login component in StartScreen and replace _hello from react_ div
 
-1. Add constructor, state, and other required functions to StartScreen component.  Pass required attributes to `<Login />`
-    1. TODO: Overview of what attributes are required
-    1. Ensure to wire up _componentHandler.upgradeDom();_ in appropriate lifecycle events (didMount, didUpdate)
+1. Add constructor, state, and other required functions to StartScreen component.  
+    1. Pass required attributes to `<Login />`
+        
+          ```javascript
+            <Login loading={this.state.loading} 
+                   email={this.state.email} 
+                   password={this.state.password} 
+                   handleFieldChange={this._handleFieldChange}  
+                   handleLogin={this._handleLogin}/>
+          ```
+        1. Ensure to wire up _componentHandler.upgradeDom();_ in appropriate lifecycle events (didMount, didUpdate)
 
 1. We are focusing on Login, and will circle back to Register if we have time - demo Postman
 
@@ -200,7 +208,7 @@ Welcome to ReHacked! By the end of this lab, you will have:
 
 1. Add push to `/dashboard` on login success
 
-1. Navigate back to Login and Forward to Dashboard - delete localStorage['USER_PROFILE'] - can no longer nav forward
+1. Navigate back to Login and Forward to Dashboard - `delete localStorage['USER_PROFILE']` - can no longer nav forward
 
 ## Give Dashboard some style
 
