@@ -101,12 +101,14 @@ Welcome to ReHacked! By the end of this lab, you will have:
 
 ## Add baseline components and start app
 
-1. Create an `index.html` and `app.js` for your SPA 
-  - **bash:** `mkdir src && cd $_ && touch app.js && touch index.html` 
+1. Create an `index.html`, `app.js`, and `dependencies.js` for your SPA 
+  - **bash:** `mkdir src && cd $_ && touch app.js && touch index.html && touch dependencies.js` 
 
 1. Copy contents of pre-defined [index.html](https://raw.githubusercontent.com/ericnograles/rehacked-spa-basics/master/src/index.html) to `index.html`
 
 1. Copy contents of pre-defined [app.js](https://raw.githubusercontent.com/ericnograles/rehacked-spa-basics/master/src/app.js) to `app.js`
+
+1. Copy contents of predefined [dependencies.js](https://raw.githubusercontent.com/ericnograles/rehacked-spa-basics/master/src/dependencies.js)
 
 1. Create a `components` subdirectory under the `src` folder.
 
@@ -157,7 +159,7 @@ Welcome to ReHacked! By the end of this lab, you will have:
 1. Create `main.scss` 
   - **bash (from the root of the project):** `mkdir -p src/assets/styles && cd $_ && touch main.scss && cd -`
 
-1. Uncomment Stylesheets require in `app.js`
+1. Uncomment Stylesheets require in `dependencies.js`
 
 1. Copy contents of pre-defined [main.scss](https://raw.githubusercontent.com/ericnograles/rehacked-spa-basics/master/src/assets/styles/main.scss)
 
