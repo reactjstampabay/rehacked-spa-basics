@@ -92,21 +92,21 @@ Welcome to ReHacked! By the end of this lab, you will have:
 1. Create a `webpack.config.js` file 
   - **bash:** `touch webpack.config.js`
 
-1. Copy contents of pre-defined [webpack config](https://gist.github.com/johnrhampton/82b5d0cebfb4b02645c7a9c1698330d8)
+1. Copy contents of pre-defined [webpack config](https://raw.githubusercontent.com/ericnograles/rehacked-spa-basics/master/webpack.config.js)
 
 1. Create a `config` directory and a `local.js` file in it 
   - **bash:** `mkdir config && cd $_ && touch local.js && cd -`
 
-1. Copy contents of pre-defined [local environment config](https://gist.github.com/johnrhampton/76f663969a11e89865b33113ed4eda6e) to `local.js`
+1. Copy contents of pre-defined [local environment config](https://raw.githubusercontent.com/ericnograles/rehacked-spa-basics/master/config/local.js) to `local.js`
 
 ## Add baseline components and start app
 
 1. Create an `index.html` and `app.js` for your SPA 
   - **bash:** `mkdir src && cd $_ && touch app.js && touch index.html` 
 
-1. Copy contents of pre-defined [index.html](https://gist.github.com/johnrhampton/9b15891913dcd04ca15c033311c712a4) to `index.html`
+1. Copy contents of pre-defined [index.html](https://raw.githubusercontent.com/ericnograles/rehacked-spa-basics/master/src/index.html) to `index.html`
 
-1. Copy contents of pre-defined [app.js](https://gist.github.com/johnrhampton/cc0e6a04cd08535b640ae99a20913e4f) to `app.js`
+1. Copy contents of pre-defined [app.js](https://raw.githubusercontent.com/ericnograles/rehacked-spa-basics/master/src/app.js) to `app.js`
 
 1. Create a `components` subdirectory under the `src` folder.
 
@@ -132,9 +132,9 @@ Welcome to ReHacked! By the end of this lab, you will have:
 1. Create `Loading/index.js` 
   - **bash (from the root of the project):** `mkdir -p src/components/Loading && cd $_ && touch index.js && cd -`
 
-1. Copy contents of pre-defined [Login Component](https://gist.github.com/johnrhampton/1df0ad69a2b3aacc6a42626cfe553bf7)
+1. Copy contents of pre-defined [Login Component](https://raw.githubusercontent.com/ericnograles/rehacked-spa-basics/master/src/components/Login/index.js)
 
-1. Copy contents of pre-defined [Loading Component](https://gist.github.com/johnrhampton/7259212dec666bf656bc8c457ebf3199)
+1. Copy contents of pre-defined [Loading Component](https://raw.githubusercontent.com/ericnograles/rehacked-spa-basics/master/src/components/Loading/index.js)
 
 1. Import Login component in StartScreen and replace _hello from react_ div
 
@@ -159,7 +159,7 @@ Welcome to ReHacked! By the end of this lab, you will have:
 
 1. Uncomment Stylesheets require in `app.js`
 
-1. Copy contents of pre-defined [main.scss](https://gist.github.com/johnrhampton/336ad7b3d903ac063e94e3d7a9f4accb)
+1. Copy contents of pre-defined [main.scss](https://raw.githubusercontent.com/ericnograles/rehacked-spa-basics/master/src/assets/styles/main.scss)
 
 ## Dev Tools
 
@@ -170,7 +170,7 @@ Welcome to ReHacked! By the end of this lab, you will have:
 ## Simple Validation
 
 1. Add `_showSnackBar` function
-  - Pre-defined [StartScreen/index.js](https://gist.github.com/johnrhampton/e6dea5e41cf0a64f10d8b728e6beea55)
+  - Pre-defined [StartScreen/index.js](https://raw.githubusercontent.com/ericnograles/rehacked-spa-basics/master/src/components/StartScreen/index.js)
 
 1. Add email/password check in _handleLogin_ 
 
@@ -193,7 +193,7 @@ Welcome to ReHacked! By the end of this lab, you will have:
 
 1. Import 'isomorphic-fetch', {ENVIRONMENT} and {USER} in `user.js`
 
-1. Export `login` function in [`user.js`](https://gist.github.com/johnrhampton/2eaa69eed860d5f4220a3fafb5b62e36) 
+1. Export `login` function in [`user.js`](https://raw.githubusercontent.com/ericnograles/rehacked-spa-basics/master/src/common/services/user.js) 
 
 1. Import `* as UserService` in `StartScreen/index.js`
 
@@ -217,11 +217,11 @@ Welcome to ReHacked! By the end of this lab, you will have:
 
 1. Create `assets/style/dashboard.scss`
 
-1. Copy contents of pre-defined [dashboard.scss](https://gist.github.com/johnrhampton/d1fadde1292bac10c28f4920d48dce72)
+1. Copy contents of pre-defined [dashboard.scss](https://raw.githubusercontent.com/ericnograles/rehacked-spa-basics/master/src/assets/styles/dashboard.scss)
 
 1. @Import `./dashboard.scss` in `main.scss`
 
-1. Copy contents of pre-defined [`Dashboard/index.js`](https://gist.github.com/johnrhampton/5002d240cd5ae32bcbdfa6814a1090f2)
+1. Copy contents of pre-defined [`Dashboard/index.js`](https://raw.githubusercontent.com/ericnograles/rehacked-spa-basics/master/src/components/Dashboard/index.js)
 
 ## Deploy to Firebase
 
