@@ -119,7 +119,9 @@ Welcome to ReHacked! By the end of this lab, you will have:
 
 1. Add basic class with render function that returns _My Dashboard_ div
 
-1. Start app by going to the root of your repo and executing `webpack-dev-server --config webpack.config.js --content-base build/ --inline --hot`
+1. Start app by going to the root of your repo and executing one of the following: 
+  - *nix Environments: `webpack-dev-server --config webpack.config.js --content-base build/ --inline --hot`
+  - Windows Environments `webpack-dev-server --progress --colors --inline --content-base build/`
 
 ## Add Login component with loading
 
