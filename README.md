@@ -128,15 +128,15 @@ Welcome to ReHacked! By the end of this lab, you will have:
 
 ## Add User Service and Common Environment Config
 
-1. Create `user.js` 
+1. Create `src/common/services/user.js` 
   - **bash (from the root of the project):** `mkdir -p src/common/services && cd $_ && touch user.js && cd -`
 
-1. Create `environment.js` 
+1. Create `src/common/constants/environment.js` 
   - **bash (from the root of the project):** `mkdir -p src/common/constants && cd $_ && touch environment.js && cd -`
 
 1. Export API_PATH from `local.js` - `export const ENVIRONMENT = { API_PATH: '' };`
 
-1. Create `endpoints.js` 
+1. Create `src/common/constants/endpoints.js` 
   - **bash (from the root of the project):** `mkdir -p src/common/constants && cd $_ && touch endpoints.js && cd -`
 
 1. Export USER const - `export const USER = { LOGIN: '/user/login' };`
@@ -145,16 +145,16 @@ Welcome to ReHacked! By the end of this lab, you will have:
 
 1. Import 'isomorphic-fetch', {ENVIRONMENT} and {USER} in `user.js`
 
-1. Export `login` function in [`user.js`](https://raw.githubusercontent.com/ericnograles/rehacked-spa-basics/master/src/common/services/user.js) 
+1. Export `login` function in [`/src/common/services/user.js`](https://raw.githubusercontent.com/ericnograles/rehacked-spa-basics/master/src/common/services/user.js) 
 
 1. Import `* as UserService` in `StartScreen/index.js`
 
 ## Add Login component with loading and utilize UserService
 
-1. Create `Login/index.js` 
+1. Create `src/components/Login/index.js` 
   - **bash (from the root of the project):** `mkdir -p src/components/Login && cd $_ && touch index.js && cd -`
 
-1. Create `Loading/index.js` 
+1. Create `src/components/Loading/index.js` 
   - **bash (from the root of the project):** `mkdir -p src/components/Loading && cd $_ && touch index.js && cd -`
 
 1. Copy contents of pre-defined [Login Component](https://raw.githubusercontent.com/ericnograles/rehacked-spa-basics/master/src/components/Login/index.js)
@@ -189,38 +189,38 @@ Welcome to ReHacked! By the end of this lab, you will have:
 
 1. Log parsed `USER_PROFILE` to console to demonstrate API response payload
 
+## Navigate to Dashboard
+
+1. While still in `src/components/StartScreen/index.js`, add this line of code to the top: `import {hashHistory} from 'react-router';`
+
+1. On a successful login in the `_handleLogin` function, add `hashHistory.push('/dashboard');`
+
+1. TEST: Navigate back to Login and Forward to Dashboard - `delete localStorage['USER_PROFILE']` - can no longer nav forward
+
 ## Add SCSS
 
-1. Create `main.scss` 
+1. Create `src/assets/styles/main.scss` 
   - **bash (from the root of the project):** `mkdir -p src/assets/styles && cd $_ && touch main.scss && cd -`
 
-1. Uncomment Stylesheets require in `dependencies.js`
+1. Uncomment Stylesheets require in `src/dependencies.js`
 
 1. Copy contents of pre-defined [main.scss](https://raw.githubusercontent.com/ericnograles/rehacked-spa-basics/master/src/assets/styles/main.scss)
+
+## Give Dashboard some style
+
+1. Create `src/assets/style/dashboard.scss`
+
+1. Copy contents of pre-defined [dashboard.scss](https://raw.githubusercontent.com/ericnograles/rehacked-spa-basics/master/src/assets/styles/dashboard.scss)
+
+1. @Import `./dashboard.scss` in `src/assets/styles/main.scss`
+
+1. Copy contents of pre-defined [`Dashboard/index.js`](https://raw.githubusercontent.com/ericnograles/rehacked-spa-basics/master/src/components/Dashboard/index.js)
 
 ## Dev Tools
 
 1. Add [React Dev Tools Chrome Extension](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi) 
 
 1. Under React tab - find StartScreen component and demonstrate setting state _loading = true_
-
-## Navigate to Dashboard
-
-1. Import {hashHistory} from `react-router`
-
-1. Add push to `/dashboard` on login success
-
-1. Navigate back to Login and Forward to Dashboard - `delete localStorage['USER_PROFILE']` - can no longer nav forward
-
-## Give Dashboard some style
-
-1. Create `assets/style/dashboard.scss`
-
-1. Copy contents of pre-defined [dashboard.scss](https://raw.githubusercontent.com/ericnograles/rehacked-spa-basics/master/src/assets/styles/dashboard.scss)
-
-1. @Import `./dashboard.scss` in `main.scss`
-
-1. Copy contents of pre-defined [`Dashboard/index.js`](https://raw.githubusercontent.com/ericnograles/rehacked-spa-basics/master/src/components/Dashboard/index.js)
 
 ## Deploy to Firebase
 
