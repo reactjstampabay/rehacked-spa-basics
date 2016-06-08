@@ -134,7 +134,7 @@ Welcome to ReHacked! By the end of this lab, you will have:
 1. Create `src/common/constants/environment.js` 
   - **bash (from the root of the project):** `mkdir -p src/common/constants && cd $_ && touch environment.js && cd -`
 
-1. Export API_PATH from `local.js` - `export const ENVIRONMENT = { API_PATH: '' };`
+1. Export API_PATH from `environment.js` - `export const ENVIRONMENT = { API_PATH: 'https://baseline-sails-api.herokuapp.com' };`
 
 1. Create `src/common/constants/endpoints.js` 
   - **bash (from the root of the project):** `mkdir -p src/common/constants && cd $_ && touch endpoints.js && cd -`
