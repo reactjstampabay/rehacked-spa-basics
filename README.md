@@ -149,7 +149,7 @@ Welcome to ReHacked! By the end of this lab, you will have:
 
 1. Import `* as UserService` in `StartScreen/index.js`
 
-## Add Login component with loading and utilize UserService
+## Add Login and Loading Components to StartScreen
 
 1. Create `src/components/Login/index.js` 
   - **bash (from the root of the project):** `mkdir -p src/components/Login && cd $_ && touch index.js && cd -`
