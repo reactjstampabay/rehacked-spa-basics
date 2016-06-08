@@ -163,23 +163,51 @@ Welcome to ReHacked! By the end of this lab, you will have:
 
 ## Add Login Validation and Functionality on StartScreen
 
-[Reference: StartScreen/index.js](https://raw.githubusercontent.com/ericnograles/rehacked-spa-basics/master/src/components/StartScreen/index.js)
+[Reference: src/components/StartScreen/index.js](https://raw.githubusercontent.com/ericnograles/rehacked-spa-basics/master/src/components/StartScreen/index.js)
 
 1. Import Login component in StartScreen and replace _hello from react_ div
 
-1. Add constructor, state, and other required functions to StartScreen component.  
-    1. Pass required attributes to `<Login />`
-        
-          ```javascript
-            <Login loading={this.state.loading} 
-                   email={this.state.email} 
-                   password={this.state.password} 
-                   handleFieldChange={this._handleFieldChange}  
-                   handleLogin={this._handleLogin}/>
-          ```
-    1. Ensure to wire up _componentHandler.upgradeDom();_ in appropriate lifecycle events (didMount, didUpdate)
+1. Establish two functions: `_handleFieldChange` and `_handleLogin`
+
+1. Establish `componentDidMount` and `componentDidUpdate` functions and add this line to each: `componentHandler.upgradeDom();`
+
+1. Add a constructor for `src/components/StartScreen/index.js` which creates a state for StartScreen and also properly bind the `_handleFieldChange` and `_handleLogin` functions
+
+  ```javascript
+  constructor(props) {
+      super(props);
+
+      this.state = {
+        status: 'initial',
+        email: '',
+        password: ''
+      };
+
+      this._handleFieldChange = this._handleFieldChange.bind(this);
+      this._handleLogin = this._handleLogin.bind(this);
+  }
+  ```
+  
+1. Pass required attributes to `<Login />`
+  ```javascript
+    <Login loading={this.state.loading} 
+           email={this.state.email} 
+           password={this.state.password} 
+           handleFieldChange={this._handleFieldChange}  
+           handleLogin={this._handleLogin}/>
+  ```
 
 1. Add `_showSnackBar` function
+  ```javascript
+    _showSnackBar(message) {
+    var data = {
+      message: message,
+      timeout: 2500
+    };
+    var snackbarContainer = document.querySelector('#login-snack-bar');
+    snackbarContainer.MaterialSnackbar.showSnackbar(data);
+  }
+  ```
 
 1. Add email/password check in `_handleLogin`.  Invoke `UserService.login` if it passes validation.
 
