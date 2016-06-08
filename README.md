@@ -201,11 +201,11 @@ Welcome to ReHacked! By the end of this lab, you will have:
   
 1. Pass required attributes to `<Login />`
   ```javascript
-    <Login loading={this.state.loading} 
-           email={this.state.email} 
-           password={this.state.password} 
-           handleFieldChange={this._handleFieldChange}  
-           handleLogin={this._handleLogin}/>
+    <Login email={this.state.email}
+        password={this.state.password}
+        handleFieldChange={this._handleFieldChange}
+        handleLogin={this._handleLogin}
+        loading={this.state.status === 'logging_in'} />
   ```
 
 1. Add `_showSnackBar` function
