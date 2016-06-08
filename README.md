@@ -180,7 +180,7 @@ Welcome to ReHacked! By the end of this lab, you will have:
   componentHandler.upgradeDom();
   ```
 
-1. Add a constructor for `src/components/StartScreen/index.js` which creates a state for StartScreen and also properly bind the `_handleFieldChange` and `_handleLogin` functions
+1. Add a constructor for `src/components/StartScreen/index.js` which creates a state for StartScreen and also properly bind the `_handleFieldChange` and `_handleLogin` functions. [React Autobinding](http://facebook.github.io/react/blog/2015/01/27/react-v0.13.0-beta-1.html#autobinding)
 
   ```javascript
   constructor(props) {
@@ -193,7 +193,7 @@ Welcome to ReHacked! By the end of this lab, you will have:
         password: ''
       };
 
-      // create bounded function to propertly set the context of this
+      // create bound function to set the context of this - in JavaScript classes, functions are not automatically bound to the class
       this._handleFieldChange = this._handleFieldChange.bind(this);
       this._handleLogin = this._handleLogin.bind(this);
   }
