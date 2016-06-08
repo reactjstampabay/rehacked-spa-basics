@@ -211,12 +211,12 @@ Welcome to ReHacked! By the end of this lab, you will have:
 1. Add `_showSnackBar` function
   ```javascript
     _showSnackBar(message) {
-    var data = {
-      message: message,
-      timeout: 2500
-    };
-    var snackbarContainer = document.querySelector('#login-snack-bar');
-    snackbarContainer.MaterialSnackbar.showSnackbar(data);
+      var data = {
+        message: message,
+        timeout: 2500
+      };
+      var snackbarContainer = document.querySelector('#login-snack-bar');
+      snackbarContainer.MaterialSnackbar.showSnackbar(data);
   }
   ```
 
