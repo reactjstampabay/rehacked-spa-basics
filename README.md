@@ -50,7 +50,7 @@ Welcome to ReHacked! By the end of this lab, you will have:
 1. Create a `.gitignore` file 
   - **bash:** `printf "# node\nnode_modules\n\n# IDE\n.idea\n\n# webpack\nbuild" >> .gitignore`
 
-1. Execute `npm init` (Interactively create a package.json file)
+1. Execute `npm init` (*Interactively creates a package.json file*)
   - **name**: rehacked-spa-basics
   - **version**: 1.0.0
   - **description**: A React SPA with basic functionality
