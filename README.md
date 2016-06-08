@@ -175,7 +175,10 @@ Welcome to ReHacked! By the end of this lab, you will have:
 
 1. Establish two functions: `_handleFieldChange` and `_handleLogin`
 
-1. Establish `componentDidMount` and `componentDidUpdate` functions and add this line to each: `componentHandler.upgradeDom();`
+1. Establish `componentDidMount` and `componentDidUpdate` functions and add this line to each: 
+  ```javascript
+  componentHandler.upgradeDom();
+  ```
 
 1. Add a constructor for `src/components/StartScreen/index.js` which creates a state for StartScreen and also properly bind the `_handleFieldChange` and `_handleLogin` functions
 
