@@ -184,6 +184,7 @@ Welcome to ReHacked! By the end of this lab, you will have:
 
   ```javascript
   constructor(props) {
+      // call the constructor of a parent class
       super(props);
 
       this.state = {
@@ -192,6 +193,7 @@ Welcome to ReHacked! By the end of this lab, you will have:
         password: ''
       };
 
+      // create bounded function to propertly set the context of this
       this._handleFieldChange = this._handleFieldChange.bind(this);
       this._handleLogin = this._handleLogin.bind(this);
   }
