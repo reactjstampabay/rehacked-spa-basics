@@ -102,7 +102,7 @@ Welcome to ReHacked! By the end of this lab, you will have:
 ## Add baseline components and start app
 
 1. Create an `index.html`, `app.js`, and `dependencies.js` for your SPA 
-  - **bash:** `mkdir src && cd $_ && touch app.js && touch index.html && touch dependencies.js` 
+  - **bash:** `mkdir src && cd $_ && touch app.js && touch index.html && touch dependencies.js && cd -` 
 
 1. Copy contents of pre-defined [index.html](https://raw.githubusercontent.com/ericnograles/rehacked-spa-basics/master/src/index.html) to `index.html`
 
