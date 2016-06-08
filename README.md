@@ -126,56 +126,6 @@ Welcome to ReHacked! By the end of this lab, you will have:
   - *nix Environments: `webpack-dev-server --config webpack.config.js --content-base build/ --inline --hot`
   - Windows Environments `webpack-dev-server --progress --colors --inline --content-base build/`
 
-## Add Login component with loading
-
-1. Create `Login/index.js` 
-  - **bash (from the root of the project):** `mkdir -p src/components/Login && cd $_ && touch index.js && cd -`
-
-1. Create `Loading/index.js` 
-  - **bash (from the root of the project):** `mkdir -p src/components/Loading && cd $_ && touch index.js && cd -`
-
-1. Copy contents of pre-defined [Login Component](https://raw.githubusercontent.com/ericnograles/rehacked-spa-basics/master/src/components/Login/index.js)
-
-1. Copy contents of pre-defined [Loading Component](https://raw.githubusercontent.com/ericnograles/rehacked-spa-basics/master/src/components/Loading/index.js)
-
-1. Import Login component in StartScreen and replace _hello from react_ div
-
-1. Add constructor, state, and other required functions to StartScreen component.  
-    1. Pass required attributes to `<Login />`
-        
-          ```javascript
-            <Login loading={this.state.loading} 
-                   email={this.state.email} 
-                   password={this.state.password} 
-                   handleFieldChange={this._handleFieldChange}  
-                   handleLogin={this._handleLogin}/>
-          ```
-    1. Ensure to wire up _componentHandler.upgradeDom();_ in appropriate lifecycle events (didMount, didUpdate)
-
-1. We are focusing on Login, and will circle back to Register if we have time (Postman demo)
-
-## Add SCSS
-
-1. Create `main.scss` 
-  - **bash (from the root of the project):** `mkdir -p src/assets/styles && cd $_ && touch main.scss && cd -`
-
-1. Uncomment Stylesheets require in `dependencies.js`
-
-1. Copy contents of pre-defined [main.scss](https://raw.githubusercontent.com/ericnograles/rehacked-spa-basics/master/src/assets/styles/main.scss)
-
-## Dev Tools
-
-1. Add [React Dev Tools Chrome Extension](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi) 
-
-1. Under React tab - find StartScreen component and demonstrate setting state _loading = true_
-
-## Simple Validation
-
-1. Add `_showSnackBar` function
-  - Pre-defined [StartScreen/index.js](https://raw.githubusercontent.com/ericnograles/rehacked-spa-basics/master/src/components/StartScreen/index.js)
-
-1. Add email/password check in _handleLogin_ 
-
 ## Add User Service and Common Environment Config
 
 1. Create `user.js` 
@@ -199,13 +149,60 @@ Welcome to ReHacked! By the end of this lab, you will have:
 
 1. Import `* as UserService` in `StartScreen/index.js`
 
-1. Invoke `UserService.login` on validation `_handleLogin`
+## Add Login component with loading and utilize UserService
+
+1. Create `Login/index.js` 
+  - **bash (from the root of the project):** `mkdir -p src/components/Login && cd $_ && touch index.js && cd -`
+
+1. Create `Loading/index.js` 
+  - **bash (from the root of the project):** `mkdir -p src/components/Loading && cd $_ && touch index.js && cd -`
+
+1. Copy contents of pre-defined [Login Component](https://raw.githubusercontent.com/ericnograles/rehacked-spa-basics/master/src/components/Login/index.js)
+
+1. Copy contents of pre-defined [Loading Component](https://raw.githubusercontent.com/ericnograles/rehacked-spa-basics/master/src/components/Loading/index.js)
+
+## Add Login Validation and Functionality on StartScreen
+
+[Reference: StartScreen/index.js](https://raw.githubusercontent.com/ericnograles/rehacked-spa-basics/master/src/components/StartScreen/index.js)
+
+1. Import Login component in StartScreen and replace _hello from react_ div
+
+1. Add constructor, state, and other required functions to StartScreen component.  
+    1. Pass required attributes to `<Login />`
+        
+          ```javascript
+            <Login loading={this.state.loading} 
+                   email={this.state.email} 
+                   password={this.state.password} 
+                   handleFieldChange={this._handleFieldChange}  
+                   handleLogin={this._handleLogin}/>
+          ```
+    1. Ensure to wire up _componentHandler.upgradeDom();_ in appropriate lifecycle events (didMount, didUpdate)
+
+1. Add `_showSnackBar` function
+
+1. Add email/password check in `_handleLogin`.  Invoke `UserService.login` if it passes validation.
 
 1. Set app state to display loading during login process
 
-1. Add stringify'd `USER_PROFILE` to localStorage on success, invoke `_showSnackBar` on login error (incorrect email or pw)
+1. Add stringify'd `USER_PROFILE` to localStorage on success, or invoke `_showSnackBar` on login error (incorrect email or pw)
 
 1. Log parsed `USER_PROFILE` to console to demonstrate API response payload
+
+## Add SCSS
+
+1. Create `main.scss` 
+  - **bash (from the root of the project):** `mkdir -p src/assets/styles && cd $_ && touch main.scss && cd -`
+
+1. Uncomment Stylesheets require in `dependencies.js`
+
+1. Copy contents of pre-defined [main.scss](https://raw.githubusercontent.com/ericnograles/rehacked-spa-basics/master/src/assets/styles/main.scss)
+
+## Dev Tools
+
+1. Add [React Dev Tools Chrome Extension](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi) 
+
+1. Under React tab - find StartScreen component and demonstrate setting state _loading = true_
 
 ## Navigate to Dashboard
 
